@@ -13,8 +13,19 @@ repositories {
 }
 
 dependencies {
+	compileOnly 'org.projectlombok:lombok:1.18.22'
+	annotationProcessor 'org.projectlombok:lombok:1.18.22'
+	testCompileOnly 'org.projectlombok:lombok:1.18.22'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.postgresql:postgresql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.mapstruct:mapstruct:1.4.2.Final'
+	implementation 'org.hibernate.validator:hibernate-validator'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
+	implementation 'javax.validation:validation-api'
+
 }
 
 test {
