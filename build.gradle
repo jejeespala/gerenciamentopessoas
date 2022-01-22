@@ -35,7 +35,7 @@ test {
 jar {
 	manifest {
 		attributes(
-				'Main-Class': 'com.pessoas.genreciamento.GenreciamentoApplication'
+				'Main-Class': 'com.pessoas.genreciamento.GenreciamentoApplication.class'
 		)
 	}
 }
